@@ -17,17 +17,19 @@ public class SelectionSort {
     int i = 0;
     
     
-    while (i < valores.length) {
-      int menor_indice = i;
+    while (i < valores.length - 1) {
+      int minIndice = i;     //O primeiro elemento não ordenado é atribuido como o mínimo
       for (int j = i + 1; j < valores.length; j++){
-        if( valores[j] < valores[menor_indice]) {
-          
-          aux = valores[menor_indice];
-          valores[menor_indice] = valores[j];
-          valores[j] = aux;
         
-        }
-      } 
+          if( valores[j] < valores[minIndice]) { 
+             //Se o elemento v[j] for menor que o mínimo, então o valor do minimo muda para j.
+             minIndice = j;
+        }    
+      }
+      // Por fim, troca a posição dos valores e vai para o proximo elemento.
+      aux = valores[i];
+      valores[i] = valores[minIndice];
+      valores[minIndice] = aux;
       i++;
     }
     return valores;
