@@ -6,13 +6,13 @@ import java.util.Arrays;
 class BubbleSort {
 public static void main(String[] args) {
     int[] numeros = {7, 1, 8, 3, 6, 3, 5};
-    
-    System.out.println(Arrays.toString(bubbleSort(numeros)));
+    bubbleSort(numeros)
+    System.out.println(Arrays.toString(numeros));
     //Saída: [1,3,3,5,6,7,8]. É um algoritmo estável portanto a ordem dos 3s foi preservada. 
   }
 
 
-  public static int[] bubbleSort(int[] v) {
+  public static void bubbleSort(int[] v) {
     int ultimoOrdenado  = v.length - 1;
     boolean troca = true;
     
@@ -31,6 +31,5 @@ public static void main(String[] args) {
       }
       ultimoOrdenado = ultimoOrdenado - 1;
     }
-    return v;
   }
 }
