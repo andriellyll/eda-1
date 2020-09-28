@@ -5,6 +5,12 @@ Códigos implementados durante o estudo de Estrutura de Dados e Algoritmos em Ja
  - [Bubble Sort](BubbleSort.java)
  - [Selection Sort](SelectionSort.java)
  - [Insertion Sort](InsertionSort.java)
+ 
+ ##### Recursivos
+ - [Bubble Sort Recursivo](BubbleRecursivo.java)
+ - [Selection Sort Recursivo](SelectionRecursivo.java)
+ - [Insertion Sort Recursivo](InsertionRecursivo.java)
+ 
  #### Dividir para conquistar
   - [Merge Sort](MergeSort.java)
   - [Quick Sort](QuickSort.java)
