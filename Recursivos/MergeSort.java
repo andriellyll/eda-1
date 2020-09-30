@@ -27,7 +27,7 @@ public class MergeSort {
 		int k = inicio;
 		
 		while(i <= meio && j <= fim) {
-			if(copy[i]  >= copy[j]) {
+			if(copy[i]  <= copy[j]) {
 				array[k] = copy[i];
 				i++;
 			} else {
@@ -38,7 +38,7 @@ public class MergeSort {
 			k++;
 		}
 		
-		while (inicio <= meio) {
+		while (i <= meio) {
 			array[k] = copy[i];
 			k++;
 			i++;
