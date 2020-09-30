@@ -1,5 +1,10 @@
 import java.util.Arrays;
+//MergeSort é um algoritmo é estavél mas não é in-place (usa memória auxiliar do tamanho da entrada)
+//Desempenho: O(n*log(n)), ele é o mais veloz dentre os algoritmos de comparação porque também é Θ(n∗logn)
 
+/* Esse algoritmo recursivo trabalha com indice para quebrar o array (porque quebrar de verdade, custa muito no desempenho)
+*	no mergeSort ele divide o array em partes menores, sempre no MEIO, em seguida une (ou "conquista") no merge.
+*/
 public class MergeSort {
 
     public static void mergeSort(int[] valores) {
@@ -26,6 +31,7 @@ public class MergeSort {
 		
 		int k = inicio;
 		
+		//Compara entre a primeira e a segunda metade do array, até uma das partes ser totalmente inserida.
 		while(i <= meio && j <= fim) {
 			if(copy[i]  <= copy[j]) {
 				array[k] = copy[i];
@@ -37,13 +43,13 @@ public class MergeSort {
 			
 			k++;
 		}
-		
+		//Se ainda faltar elementos da primeira parte para adicionar, adicione.
 		while (i <= meio) {
 			array[k] = copy[i];
 			k++;
 			i++;
 		}
-		
+		//Se faltou elementos segunda parte, adicione.
 		while(j <= fim) {
 			array[k] = copy[j];
 			k++;
