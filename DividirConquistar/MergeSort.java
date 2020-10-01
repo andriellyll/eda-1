@@ -3,7 +3,8 @@ import java.util.Arrays;
 //Desempenho: O(n*log(n)), ele é o mais veloz dentre os algoritmos de comparação porque também é Θ(n∗logn)
 
 /* Esse algoritmo recursivo trabalha com indice para quebrar o array (porque quebrar de verdade, custa muito no desempenho)
-*	no mergeSort ele divide o array em partes menores, sempre no MEIO, em seguida une (ou "conquista") no merge.
+*  no mergeSort ele divide o array em partes menores, sempre no MEIO, em seguida une (ou "conquista") no merge.
+*  Por sempre quebrar no meio, pior caso e melhor caso seguem as mesma instruções, o desempenho é fixo em n*logn.
 */
 public class MergeSort {
 
@@ -12,7 +13,7 @@ public class MergeSort {
         mergeSort(valores, 0, valores.length - 1);
     }
 
-    private static void mergeSort(int[] array, int inicio, int fim) {
+    public static void mergeSort(int[] array, int inicio, int fim) {
         if(inicio < fim) {
 			int meio = (inicio + fim)/2;
 			

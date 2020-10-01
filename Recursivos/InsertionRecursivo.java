@@ -9,7 +9,7 @@ public class InsertionRecursivo {
         }
     }
     
-    private static void insertionRecursivo(int[] valores, int indiceInicial, int tamanhoArray) {
+    public static void insertionRecursivo(int[] valores, int indiceInicial, int tamanhoArray) {
         int j = indiceInicial + 1;
 		if(indiceInicial < tamanhoArray) {
 			while ((j > 0) && ( valores[j] < valores[j - 1])) {

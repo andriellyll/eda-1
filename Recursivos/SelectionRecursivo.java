@@ -12,7 +12,7 @@ class SelectionRecursivo {
         }
     }
     
-    private static void selectionRecursivo(int[] valores, int i, int tamanhoArray) {   
+    public static void selectionRecursivo(int[] valores, int i, int tamanhoArray) {   
         if (i < tamanhoArray) {
           int minIndice = i;
     
