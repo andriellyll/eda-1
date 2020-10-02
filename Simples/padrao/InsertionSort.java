@@ -1,3 +1,4 @@
+package padrao;
 public class InsertionSort {
 	// Insertion Sort é estável e in-place
 	// Possui melhor desempenho que Selection e Bubble Sort para pequenas entradas.

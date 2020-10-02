@@ -1,3 +1,4 @@
+package padrao;
 public class SelectionSort {
   //Selection sort é in-place e não é estável;
   //Desempenho: O(n^2)
