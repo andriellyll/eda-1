@@ -1,4 +1,4 @@
-package Variações;
+package variacoes;
 
 public class InsertionRecursivo {
 
