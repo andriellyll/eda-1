@@ -1,5 +1,14 @@
 package testes;
-
+/*
+ * 
+ * Para ser possivel utilizar essa classe de testes a classe do algoritmo que deseja ser testado deve implementar a interface 
+ * 'Implementacao'(disponivel no pacote interfaces) para executar a verificacao com os testes fornecidos basta utilixar a classe 
+ * desejada no construtor forncedido no comeco dos testes.
+ * ex: Implementacao ordenador = new BubbleSort() para testar a classe BubbleSort onde o algoritmo bubble sort foi implementado.
+ * 
+ * o algoritimo de ordenacao deve ser implementado dentro do metodo Sort().
+ * 
+ */
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
@@ -8,14 +17,13 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import interfaces.Implementacao;
 import padrao.BubbleSort;
 import padrao.InsertionSort;
 import padrao.SelectionSort;
 
 class TestesDeOrdenação {
 
-	InsertionSort insertion;
-	SelectionSort selection;
 	private int [] vetorOrdenado;
 	private int [] vetorDesordenado;
 	private int [] vetorParcialmenteOrdenado;
@@ -58,63 +66,66 @@ class TestesDeOrdenação {
 		this.vetorQtdElementosPares = Arrays.copyOf(vetor,vetor.length);
 	}
 	
-	/* Testes para o algoritmo Bubble Sort Simples */
+	/* Testes para o algoritmo de ordenacao */
+
+	Implementacao ordenador = new BubbleSort();
+	
 	@Test
 	void testBubbleComVetorOrdenado() {
 		int [] vetorCopia = Arrays.copyOf(vetorOrdenado,vetorOrdenado.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorOrdenado);
+		ordenador.Sort(vetorOrdenado);
 		Assert.assertArrayEquals(vetorCopia,vetorOrdenado);
 	}
 	@Test
 	void testBubbleComVetorDesordenado() {
 		int [] vetorCopia = Arrays.copyOf(vetorDesordenado,vetorDesordenado.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorDesordenado);
+		ordenador.Sort(vetorDesordenado);
 		Assert.assertArrayEquals(vetorCopia,vetorDesordenado);
 	}
 	@Test
 	void testBubbleComVetorParcilamenteOrdenao() {
 		int [] vetorCopia = Arrays.copyOf(vetorParcialmenteOrdenado,vetorParcialmenteOrdenado.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorParcialmenteOrdenado);
+		ordenador.Sort(vetorParcialmenteOrdenado);
 		Assert.assertArrayEquals(vetorCopia,vetorParcialmenteOrdenado);
 	}
 	@Test
 	void testBubbleComVetorElementosIguais() {
 		int [] vetorCopia = Arrays.copyOf(vetorElementosIguais,vetorElementosIguais.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorElementosIguais);
+		ordenador.Sort(vetorElementosIguais);
 		Assert.assertArrayEquals(vetorCopia,vetorElementosIguais);
 	}
 	@Test
 	void testBubbleComVetorComUmElemento() {
 		int [] vetorCopia = Arrays.copyOf(vetorComUmElemento,vetorComUmElemento.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorComUmElemento);
+		ordenador.Sort(vetorComUmElemento);
 		Assert.assertArrayEquals(vetorCopia,vetorComUmElemento);
 	}
 	@Test
 	void testBubbleComVetorComQtdDeElementosImpares() {
 		int [] vetorCopia = Arrays.copyOf(vetorQtdElementosImpares,vetorQtdElementosImpares.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorQtdElementosImpares);
+		ordenador.Sort(vetorQtdElementosImpares);
 		Assert.assertArrayEquals(vetorCopia,vetorQtdElementosImpares);
 	}
 	@Test
 	void testBubbleComVetorComQtdDeElementosPares() {
 		int [] vetorCopia = Arrays.copyOf(vetorQtdElementosPares,vetorQtdElementosPares.length);
 		Arrays.sort(vetorCopia);
-		BubbleSort.bubbleSort(vetorQtdElementosPares);
+		ordenador.Sort(vetorQtdElementosPares);
 		Assert.assertArrayEquals(vetorCopia,vetorQtdElementosPares);
 	}
 	@Test
 	void testBubbleComVetorNulo() {
-		assertEquals(true,BubbleSort.testeDeEntrada(null));
+		assertEquals(true,ordenador.testeDeEntrada(null));
 	}
 	@Test
 	void testBubbleComVetorVazio() {
-		assertEquals(true,BubbleSort.testeDeEntrada(new int [] {}));
+		assertEquals(true,ordenador.testeDeEntrada(new int [] {}));
 	}
 
 }

@@ -4,6 +4,7 @@
 	<classpathentry kind="src" path="Recursivos"/>
 	<classpathentry kind="src" path="Simples"/>
 	<classpathentry kind="src" path="testesDeUnidade"/>
+	<classpathentry kind="src" path="interfaces"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

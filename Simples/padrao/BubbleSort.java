@@ -3,10 +3,11 @@ package padrao;
 // In place, estavel, e pessimo na pratica por fazer muita comparacoes e muitas trocas.
 // Desempenho: O(n^2)
 
+import interfaces.Implementacao;
 
-public class BubbleSort {
+public class BubbleSort implements Implementacao{
 
-  public static void bubbleSort(int[] v) {
+  public void Sort(int[] v) {
 	  if(testeDeEntrada(v)) {
 		  return;
 	  }
@@ -31,7 +32,7 @@ public class BubbleSort {
       v[i] = aux;
     }
   }
-  public static boolean testeDeEntrada(int[] v) {
+  public  boolean testeDeEntrada(int[] v) {
 	  if(v == null) {
 		  return true;
 	  }else if(v.length == 0) {

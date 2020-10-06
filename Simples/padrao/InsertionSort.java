@@ -1,5 +1,8 @@
 package padrao;
-public class InsertionSort {
+
+import interfaces.Implementacao;
+
+public class InsertionSort implements Implementacao {
 	// Insertion Sort é estável e in-place
 	// Possui melhor desempenho que Selection e Bubble Sort para pequenas entradas.
 	// Desempenho: O(n^2)
@@ -9,7 +12,7 @@ public class InsertionSort {
 	* array, ele para.
 	*/
 
-    public static void insertionSort(int[] v) {
+    public void Sort(int[] v) {
 
 		for (int j = 1; j < v.length; j++) { //Assumindo que o primeiro elemento(v[0]) está ordenado, compara a partir do segundo. 
 			int chave = v[j]; // chave é o elemento que está sendo extraído.
@@ -23,4 +26,16 @@ public class InsertionSort {
 			v[i+1] = chave;
 		}
 	}
-}
+
+	@Override
+	public boolean testeDeEntrada(int[] v) {
+		if(v == null) {
+			  return true;
+		  }else if(v.length == 0) {
+			  return true;
+		  }
+		  
+		  return false;
+	  }
+	}
+
