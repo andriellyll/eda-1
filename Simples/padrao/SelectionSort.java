@@ -1,5 +1,8 @@
 package padrao;
-public class SelectionSort {
+
+import interfaces.Implementacao;
+
+public class SelectionSort implements Implementacao{
   //Selection sort é in-place e não é estável;
   //Desempenho: O(n^2)
   
@@ -7,7 +10,7 @@ public class SelectionSort {
     * Em seguida, repete esse processo até o final da sequência.
     */ 
   
-  public static void selectionSort(int[] valores) {
+  public void Sort(int[] valores) {
     int i = 0;
     
     while (i < valores.length - 1) {
@@ -32,4 +35,16 @@ public class SelectionSort {
       valores[i] = valores[j];
       valores[j] = aux;
   }
+
+
+@Override
+public boolean testeDeEntrada(int[] v) {
+	 if(v == null) {
+		  return true;
+	  }else if(v.length == 0) {
+		  return true;
+	  }
+	  
+	  return false;
+}
 }
