@@ -3,12 +3,10 @@ Códigos implementados durante o estudo de Estrutura de Dados e Algoritmos em Ja
 <br> **Não devem ser usados diretamente nas disciplinas.**
 
 ## Como funciona
----
 Cada implementação tem explicação sobre o funcionamento e informações sobre estabilidade, desempenho e se é in-place.
 
 
 ## Ordenação
----
  ### Simples
  - [Bubble Sort](Simples/BubbleSort.java)
  - [Selection Sort](Simples/SelectionSort.java)
@@ -22,7 +20,6 @@ Cada implementação tem explicação sobre o funcionamento e informações sobr
  ### Dividir e conquistar
   - [Merge Sort](DividirConquistar/MergeSort.java)
   - [Quick Sort](DividirConquistar/QuickSort.java)
-
----
+  
   ## Como contribuir
   Verifique a sessão de issues.
