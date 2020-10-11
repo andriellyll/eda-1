@@ -1,5 +1,4 @@
-package padrao;
-
+package simples;
 import interfaces.Implementacao;
 
 public class InsertionSort implements Implementacao {
@@ -27,7 +26,6 @@ public class InsertionSort implements Implementacao {
 		}
 	}
 
-	@Override
 	public boolean testeDeEntrada(int[] v) {
 		if(v == null) {
 			  return true;

@@ -1,3 +1,4 @@
+package dividirConquistar;
 public class QuickSort {
     // QuickSort é in-place mas não é estavel.
     // Desempenho: Θ(n*logn) mas no pior caso é O(n^2) e nesse sentido ele perde para o MergeSort.

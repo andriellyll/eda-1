@@ -1,5 +1,4 @@
-package padrao;
-
+package simples;
 import interfaces.Implementacao;
 
 public class SelectionSort implements Implementacao{
@@ -36,15 +35,13 @@ public class SelectionSort implements Implementacao{
       valores[j] = aux;
   }
 
-
-@Override
-public boolean testeDeEntrada(int[] v) {
-	 if(v == null) {
-		  return true;
-	  }else if(v.length == 0) {
-		  return true;
-	  }
-	  
-	  return false;
-}
+  public boolean testeDeEntrada(int[] v) {
+     if(v == null) {
+        return true;
+      }else if(v.length == 0) {
+        return true;
+      }
+      
+      return false;
+  }
 }

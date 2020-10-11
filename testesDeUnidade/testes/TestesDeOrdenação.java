@@ -18,11 +18,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import interfaces.Implementacao;
-import padrao.BubbleSort;
-import padrao.InsertionSort;
-import padrao.SelectionSort;
+import simples.BubbleSort;
 
-class TestesDeOrdenação {
+class TestesDeOrdenacao {
 
 	private int [] vetorOrdenado;
 	private int [] vetorDesordenado;

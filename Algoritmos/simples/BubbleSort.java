@@ -1,4 +1,4 @@
-package padrao;
+package simples;
 // Algoritmo de ordenacao mais simples. Carrega o maior elemento para o final da sequencia (em cada iteracao ).
 // In place, estavel, e pessimo na pratica por fazer muita comparacoes e muitas trocas.
 // Desempenho: O(n^2)
@@ -32,6 +32,7 @@ public class BubbleSort implements Implementacao{
       v[i] = aux;
     }
   }
+  
   public  boolean testeDeEntrada(int[] v) {
 	  if(v == null) {
 		  return true;
@@ -41,5 +42,5 @@ public class BubbleSort implements Implementacao{
 	  
 	  return false;
   }
-
+  
 }

@@ -18,8 +18,12 @@ Cada implementação tem explicação sobre o funcionamento e informações sobr
  - [Insertion Sort Recursivo](Recursivos/InsertionRecursivo.java)
  
  ### Dividir e conquistar
-  - [Merge Sort](DividirConquistar/MergeSort.java)
-  - [Quick Sort](DividirConquistar/QuickSort.java)
+ - [Merge Sort](DividirConquistar/MergeSort.java)
+ - [Quick Sort](DividirConquistar/QuickSort.java)
+
+ ### Linear
+ - [Counting Sort](Linear/CountingSort.java)
+ - [Extended Counting Sort](Linear/ExtendedCountingSort.java)
   
   ## Como contribuir
   Verifique a sessão de issues.

@@ -1,3 +1,4 @@
+package dividirConquistar;
 import java.util.Arrays;
 //MergeSort é um algoritmo é estavél mas não é in-place (usa memória auxiliar do tamanho da entrada)
 //Desempenho: O(n*log(n)), ele é o mais veloz dentre os algoritmos de comparação porque também é Θ(n∗logn)

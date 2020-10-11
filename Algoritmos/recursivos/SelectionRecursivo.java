@@ -1,7 +1,5 @@
-package variacoes;
-/* A principal mudança nesse algoritmo para a versão iterativa é que nesse o método controla os indices
-* Por tanto usamos o while, apenas verificamos se a condição é verdadeira e chama o método novamente.
-*/
+package recursivos;
+
 
 class SelectionRecursivo {
 
@@ -12,7 +10,7 @@ class SelectionRecursivo {
         }
     }
     
-    private static void selectionRecursivo(int[] valores, int i, int tamanhoArray) {   
+    public static void selectionRecursivo(int[] valores, int i, int tamanhoArray) {   
         if (i < tamanhoArray) {
           int minIndice = i;
     

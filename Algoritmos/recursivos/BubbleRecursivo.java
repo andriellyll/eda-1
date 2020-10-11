@@ -1,4 +1,5 @@
-package variacoes;
+package recursivos;
+
 
 public class BubbleRecursivo {
 
@@ -9,7 +10,7 @@ public class BubbleRecursivo {
         }
     }
 
-    private static void bubbleRecursivo(int[] valores, int i, int j) {
+    public static void bubbleRecursivo(int[] valores, int i, int j) {
         
         if (i < j) {  
           //Percorre a sequência do começo ao último elemento ordenado diversas vezes.
