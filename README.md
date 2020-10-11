@@ -8,22 +8,22 @@ Cada implementação tem explicação sobre o funcionamento e informações sobr
 
 ## Ordenação
  ### Simples
- - [Bubble Sort](Simples/BubbleSort.java)
- - [Selection Sort](Simples/SelectionSort.java)
- - [Insertion Sort](Simples/InsertionSort.java)
+ - [Bubble Sort](Algoritmos/simples/BubbleSort.java)
+ - [Selection Sort](Algoritmos/simples/SelectionSort.java)
+ - [Insertion Sort](Algoritmos/simples/InsertionSort.java)
  
  ### Recursivos
- - [Bubble Sort Recursivo](Recursivos/BubbleRecursivo.java)
- - [Selection Sort Recursivo](Recursivos/SelectionRecursivo.java)
- - [Insertion Sort Recursivo](Recursivos/InsertionRecursivo.java)
+ - [Bubble Sort Recursivo](Algoritmos/recursivos/BubbleRecursivo.java)
+ - [Selection Sort Recursivo](Algoritmos/recursivos/SelectionRecursivo.java)
+ - [Insertion Sort Recursivo](Algoritmos/recursivos/InsertionRecursivo.java)
  
  ### Dividir e conquistar
- - [Merge Sort](DividirConquistar/MergeSort.java)
- - [Quick Sort](DividirConquistar/QuickSort.java)
+ - [Merge Sort](Algoritmos/dividirConquistar/MergeSort.java)
+ - [Quick Sort](Algoritmos/dividirConquistar/QuickSort.java)
 
  ### Linear
- - [Counting Sort](Linear/CountingSort.java)
- - [Extended Counting Sort](Linear/ExtendedCountingSort.java)
+ - [Counting Sort](Algoritmos/linear/CountingSort.java)
+ - [Extended Counting Sort](Algoritmos/linear/ExtendedCountingSort.java)
   
   ## Como contribuir
   Verifique a sessão de issues.
